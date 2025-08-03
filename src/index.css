@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "@flaticon/flaticon-uicons/css/all/all";
 
-
 * {
     box-sizing: border-box;
 }
@@ -25,4 +24,22 @@
 
 .active i {
     display: block;
+}
+
+/* Updated scrollbar utility class for thin, subtle horizontal scrollbar */
+.styled-scrollbar {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.styled-scrollbar::-webkit-scrollbar {
+  width: 0.5rem; /* width of the vertical scrollbar */
+  height: 2px; /* height of the horizontal scrollbar */
+  background-color: transparent;
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d1d5db; /* subtle gray color for the thumb */
+  border-radius: 1px;
 }
